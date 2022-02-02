@@ -32,10 +32,10 @@ function App() {
       </nav>
 
       {filter === 'a' && <BlogForm/>}
-      {filter === 'b' && <BlogList/>}
+      {filter === 'b' && <ContactForm/>}
       {filter === 'c' && <BlogReadingApp/>}
       {filter === 'd' && <BookMarkingApp/>}
-      {filter === 'e' && <ContactForm/>}
+      {filter === 'e' && <BlogList/>}
       
     </div>
   );
