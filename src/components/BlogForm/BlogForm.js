@@ -16,7 +16,7 @@ const newBlog = (title, blogContent) => {
         title,
         blogContent
       }
-    setBlog([blog, addNewBlog]) 
+    setBlog([...blog, addNewBlog]) 
   }
 
     return(
