@@ -9,7 +9,7 @@ function Form({addBlog}){
 
     const submitBlog = (e) =>{
         e.preventDefault();
-        addBlog(title, blogContent)
+        addBlog(title, blogContent);
         setTitle('');
         setBlogContent('');
     }

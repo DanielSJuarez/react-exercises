@@ -23,7 +23,7 @@ function BlogApp(){
       setBlog(updatedBlog);
     }
 
-    const editBlog = (id, title, blogContent) => {
+    const editBlog = (title, blogContent, id) => {
       const updatedBlog = [...blog];
       const index = updatedBlog.findIndex(blog => blog.id === id);
       updatedBlog[index].title = title;
