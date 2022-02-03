@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import BlogList from "./components/BlogCMS/BlogList";
+import BlogApp from "./components/BlogCMS/BlogApp";
 import BlogForm from "./components/BlogForm/BlogForm";
 import BlogReadingApp from "./components/BlogReadingApp/BlogReadingApp";
 import BookMarkingApp from "./components/BookMarkingApp/BookMarkingApp";
@@ -35,7 +35,7 @@ function App() {
       {filter === 'b' && <ContactForm/>}
       {filter === 'c' && <BlogReadingApp/>}
       {filter === 'd' && <BookMarkingApp/>}
-      {filter === 'e' && <BlogList/>}
+      {filter === 'e' && <BlogApp/>}
       
     </div>
   );
