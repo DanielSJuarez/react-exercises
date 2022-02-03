@@ -1,7 +1,7 @@
-function Tag({ tag, setFilter }) {
+function Tag({ tag, setFilter, id}) {
     return (
         <section>
-            <button type='button' name={tag} onClick={() => setFilter(tag)}>{tag}</button>
+            <button  id={id} type='button' name={tag} onClick={() => setFilter(tag)}>{tag}</button>
         </section>
     )
 }

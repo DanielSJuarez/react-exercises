@@ -10,14 +10,15 @@ function ContactForm(props) {
         <Display key={contact.id} {...contact} />
       ));
   
-    const infoForm = (first, last, address, phoneNumber, id) => {
-        const addNewContact = {
-            first,
-            last,
-            address,
-            phoneNumber,
-            id: uuidv4(),
-        }
+    const infoForm = (addNewContact) => {
+        // const addNewContact = {
+        //     first,
+        //     last,
+        //     address,
+        //     phoneNumber,
+        //     id: uuidv4(),
+        // }
+        addNewContact.id = uuidv4();
         setContact([...contact, addNewContact])
     }
 

@@ -34,8 +34,8 @@ function Form({addBlog}){
     return (
         <form onSubmit={submitBlog}>
             <div>
-                <input type="text" name="title" value={title} placeholder='Title' onChange={createTitle}></input>
-                <textarea name="blogContent" value={blogContent} placeholder='Your content here' onChange={createContent}></textarea>
+                <input type="text" name="title" value={title} placeholder='Title' onChange={createTitle} required></input>
+                <textarea name="blogContent" value={blogContent} placeholder='Your content here' onChange={createContent} required></textarea>
             </div>
             <div>
                 <button name='submit' type='submit'>Submit</button>

@@ -1,5 +1,7 @@
-function Display({ tag, title, url }) {
-    return (
+function Display(props) {
+    
+    const {url, tag, title}= props.bookmark
+     return (
         <section>
             <p>{tag}</p>
             <p>{title}</p>
