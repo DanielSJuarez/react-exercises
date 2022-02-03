@@ -12,7 +12,8 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <ul>
+        <p className='buttonhead'>Pick a button!</p>
+        <ul className='apps'>
           <li>
             <button onClick={() => setFilter('a')}>a</button>
           </li>

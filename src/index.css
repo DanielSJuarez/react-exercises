@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0099ff;
+  text-align: center;
 }
 
 code {
@@ -19,9 +20,95 @@ ul{
 
 button{
   color: white;
-  background-color: #595959
+  background-color: #595959;
+  margin: 5px;
+}
+
+button:hover{
+  background-color: #353535;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
 }
 
 h1{
   font-size: 40px;
+  border: solid 3px;
+  width: fit-content;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+input{
+  margin: 15px 5px 5px 5px;
+}
+
+input:hover{
+  background-color: rgb(216, 216, 216);
+}
+
+p{
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto
+}
+
+.apps{
+  display: flex;
+  border: solid 2px black;
+  width: 215px;
+  margin-left: 25px;
+  margin-bottom: 100px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotatey(0deg);
+    opacity: 0%;
+  }
+  to {
+    transform: rotatey(360deg);
+    opacity: 100%;
+  }
+}
+
+.buttonhead{
+  animation: 2s rotate infinite;
+  text-align: left;
+  margin: 10px 0px 0px 25px;
+  font-weight: 800;
+  width: 200px;
+}
+
+.listButtons{
+  margin-top: 25px;
+  width: 250px;
+}
+
+.formInputs{
+  width: 200px;
+}
+
+.blog{
+  border: solid 2px black;
+  background-color: white;
+  color: black;
+  width: fit-content;
+  padding: 5px;
+  max-width: 1000px;
+  margin: 15px auto;
+}
+
+.filterButtons{
+  display: flex;
+  justify-content: center;
+}
+
+.bookMarks{
+  border: solid 2px black;
+  background-color: white;
+  color: black;
+  width: fit-content;
+  padding: 5px;
+  max-width: 1000px;
+  margin: 15px auto;
 }

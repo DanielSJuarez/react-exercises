@@ -26,8 +26,8 @@ function Form({newBlog}) {
     return (
         <form onSubmit={submitBlog}>
             <div>
-                <input type="text" name="title" value={title} placeholder='title' onChange={createTitle}></input>
-                <textarea name="blogContent" value={blogContent} placeholder='Your content here' onChange={createContent}></textarea>
+                <input className='formInputs' type="text" name="title" value={title} placeholder='title' onChange={createTitle}></input>
+                <input className='formInputs' type='text' name="blogContent" value={blogContent} placeholder='Your content here' onChange={createContent}></input>
             </div>
             <div>
                 <button name='submit' type='submit'>Submit</button>

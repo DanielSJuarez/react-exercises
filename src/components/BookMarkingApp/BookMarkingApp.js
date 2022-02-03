@@ -33,10 +33,10 @@ function BookMarkingApp(prop) {
         <div>
             <h1>Enter your links! Sort your data!</h1>
             <Form addForm={addForm} {...urlList} />
-            <div>
+            <div className='filterButtons'>
                 <button name='all' onClick={e=>setFilter(null)}>All</button>
+                {tagSec}
             </div>
-            {tagSec}
             {bookmarksHTML}
         </div>
     )

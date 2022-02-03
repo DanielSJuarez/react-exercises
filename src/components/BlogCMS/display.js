@@ -32,7 +32,7 @@ function Display({title, blogContent, editBlog, removeBlog, id }) {
 
 
     const saveMode = (
-        <article>
+        <article className='blog'>
             <h2>{title}</h2>
             <p>{blogContent}</p>
             <button name='edit' type='button' onClick={()=> setEdit(true)}>Edit</button>
@@ -45,7 +45,7 @@ function Display({title, blogContent, editBlog, removeBlog, id }) {
             <h2>{title}</h2>
             <p>{blogContent}</p>
             <input type='text' value={newTitle} placeholder='New Title' onChange={updateTitle}></input>
-            <textarea value={newBlogContent} placeholder='New Content' onChange={updateContent}></textarea>
+            <input type='text' value={newBlogContent} placeholder='New Content' onChange={updateContent}></input>
             <button name='save' type='submit' onClick={saveChange}>Save</button>
             <button id={id} name='cancel' type='button' onClick={clearChange}>Cancel</button>
         </article>

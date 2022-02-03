@@ -1,7 +1,7 @@
 function BlogList({title, setFilter, id}) {
 
     return (
-        <button type='button' name={title} onClick={() => setFilter(id)}>{title}</button>
+        <button className='listButtons' type='button' name={title} onClick={() => setFilter(id)}>{title}</button>
     )
 }
 
