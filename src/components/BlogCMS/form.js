@@ -9,7 +9,16 @@ function Form({addBlog}){
 
     const submitBlog = (e) =>{
         e.preventDefault();
+        if(title.trim().length === 0 || blogContent.trim().length === 0 ){
+            return;
+          } 
         addBlog(title, blogContent);
+        setTitle('');
+        setBlogContent('');
+    }
+
+    const clearSub = (e)=>{
+        e.preventDefault();
         setTitle('');
         setBlogContent('');
     }
@@ -30,6 +39,7 @@ function Form({addBlog}){
             </div>
             <div>
                 <button name='submit' type='submit'>Submit</button>
+                <button name='cancel' type='submit' onClick= {clearSub}>Cancel</button>
             </div>
         </form>
     )

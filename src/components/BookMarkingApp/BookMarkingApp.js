@@ -3,6 +3,7 @@ import Display from "./display";
 import Form from "./form";
 import Tag from "./tag";
 import TagList from "./tagList";
+import { v4 as uuidv4 } from 'uuid';
 
 
 function BookMarkingApp(prop) {
@@ -22,7 +23,7 @@ function BookMarkingApp(prop) {
     const addTag = (tag, id) => {
         const newTag = {
             tag,
-            id,
+            id: uuidv4(),
         }
         setUniTag([...uniTag, newTag]);
     }
@@ -32,7 +33,7 @@ function BookMarkingApp(prop) {
             url,
             title,
             tag,
-            id,
+            id: uuidv4(),
         }
         setUrlList([...urlList, newSubmit])
     }

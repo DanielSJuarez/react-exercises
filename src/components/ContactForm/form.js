@@ -1,7 +1,4 @@
 import {useState} from 'react';
-import { v4 as uuidv4 } from 'uuid';
-
-const id = uuidv4();
 
 const INITIAL_STATE = {
     first: '',
@@ -16,9 +13,8 @@ const [state, setState] = useState(INITIAL_STATE)
 
 const subContact = (e) => {
     e.preventDefault();
-    infoForm(state.first, state.last, state.address, state.phoneNumber, id);
+    infoForm(state.first, state.last, state.address, state.phoneNumber);
     setState(INITIAL_STATE);
-    id();
 }
 
     return(

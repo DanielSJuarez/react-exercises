@@ -16,7 +16,7 @@ function ContactForm(props) {
             last,
             address,
             phoneNumber,
-            id,
+            id: uuidv4(),
         }
         setContact([...contact, addNewContact])
     }

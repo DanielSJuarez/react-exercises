@@ -1,7 +1,4 @@
 import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
-
-let id = uuidv4();
 
 const INITIAL_STATE = {
     url: '',
@@ -16,15 +13,13 @@ function Form({ addForm, addTag, tag}) {
     const subForm = (e) => {
         e.preventDefault();
         if (tag === state.tag) {
-            addForm(state.url, state.title, state.tag, id);
+            addForm(state.url, state.title, state.tag);
             setState(INITIAL_STATE);
-            id();
             return;
         } else {
-            addTag(state.tag, id);
-            addForm(state.url, state.title, state.tag, id);
+            addTag(state.tag);
+            addForm(state.url, state.title, state.tag);
             setState(INITIAL_STATE);
-            id();
             return;
         }
     }

@@ -7,6 +7,9 @@ function Display({title, blogContent, editBlog, removeBlog, id }) {
 
     const saveChange = (e) => {
         e.preventDefault();
+        if(newTitle.trim().length === 0  || newBlogContent.trim().length === 0 ){
+            return;
+        }
         editBlog(newTitle, newBlogContent, id)
         setNewTitle('');
         setNewBlogContent('');

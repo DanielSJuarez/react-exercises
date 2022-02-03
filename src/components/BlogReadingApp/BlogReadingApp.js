@@ -37,7 +37,7 @@ function BlogReadingApp() {
 
     const blogList = blog
     .map((blog) => (
-        <BlogList {...blog} setFilter={setFilter}/>
+        <BlogList key={blog.id} {...blog} setFilter={setFilter}/>
       ));
 
 
