@@ -19,11 +19,13 @@ function Form({ addForm, addTag, tag}) {
             addForm(state.url, state.title, state.tag, id);
             setState(INITIAL_STATE);
             id();
+            return;
         } else {
             addTag(state.tag, id);
             addForm(state.url, state.title, state.tag, id);
             setState(INITIAL_STATE);
             id();
+            return;
         }
     }
 

@@ -1,6 +1,6 @@
-function TagList(tag, title, url) {
+function TagList({props}) {
 
-    // const { title, tag, url } = props.tagList;
+    const { title, tag, url } = props.tagListMap;
 
     return (
         <section>

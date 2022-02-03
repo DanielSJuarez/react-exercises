@@ -37,9 +37,9 @@ function BookMarkingApp(prop) {
         setUrlList([...urlList, newSubmit])
     }
 
-  const tagList = urlList.filter(urlList => urlList.tag === filter);
+//   const tagList = urlList.filter(urlList => urlList.tag === filter);
 
-  const tagListMap = tagList.map(tagList => <TagList {...urlList}/>)
+  const tagListMap = urlList.filter(urlList => urlList.tag === filter).map(tagList => <TagList {...tagListMap}/>)
 
     return (
         <div>
